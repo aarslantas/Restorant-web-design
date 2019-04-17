@@ -1,0 +1,179 @@
+.header{
+    font-size: 1.3rem;
+    font-weight: 300;
+    height:auto;
+  // background-color: orangered;
+    color: grey;
+  //  box-shadow:  0 .3rem .3rem rgba(0,0,0,.3);
+    //border-bottom: 2 px solid black;
+
+
+
+
+    &__top{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 10rem;
+        border-bottom: 1px solid #ddd;
+
+        @media only screen and (max-width:$bp-small) {
+            padding: 0 2rem;
+        }
+        
+    }
+    &__top-left{
+        flex: 1;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding: .5rem 0;
+
+        @media only screen and (max-width:$bp-smallest) {
+           flex: 4;
+        }
+      
+    }
+
+    &__top-right{        
+        flex: 1;
+
+        display: flex;
+        justify-content: flex-end;
+
+        padding: .5rem 0;
+
+        @media only screen and (max-width:$bp-smallest) {
+            flex: 1;
+         }
+      
+    }
+
+    &__list{
+        list-style: none;
+        
+    }
+
+    &__item-left{
+        float: left;
+        margin-right: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        
+      
+
+        &:not(:last-child){
+            border-right: 1px solid #ddd;
+            padding-right: 1.5rem;
+        }
+
+        span{
+            margin-left: .3rem;
+            
+          
+         
+        }
+    }
+
+    &__item-right{
+        float: left;
+        margin-right: .5rem;
+
+        display: flex;
+        align-items: center;
+   
+    }
+    
+    &__icon-logo{
+        height:1.3rem;
+        width: 1.3rem;
+        fill: #ba252c;
+    }
+
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+
+        padding: .5rem 10rem;
+
+        @media only screen and (max-width:$bp-small) {
+            padding: .5rem 2rem;
+        }
+    }
+
+    &__logo{
+        
+        height: 6rem;
+      
+    }
+}
+
+.footer{
+    padding: 4rem 10rem;
+    background-color: #646464; 
+   
+   
+    display: flex;
+    justify-content: flex-start;
+
+    @media only screen and (max-width:$bp-small) {
+        padding: 1rem 2rem;
+    }
+
+   
+    &__left{
+        flex:1;
+        font-size: 1.5rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        letter-spacing: .2rem;
+
+        @media only screen and (max-width:$bp-smallest) {
+            flex:2;
+        }
+        @media only screen and (max-width:$bp-smallest) {
+            flex:4;
+        }
+     
+    }
+
+    &__right{
+        flex:1;
+     
+
+        display: flex;
+        justify-content:flex-end;
+
+        @media only screen and (max-width:$bp-muchsmaller) {
+            flex:1;
+        }
+        @media only screen and (max-width:$bp-muchsmaller) {
+            flex:1;
+        }
+    }
+
+    &__list{
+        list-style: none;
+
+        display: flex;
+        justify-content: start;
+        
+    }
+
+    &__icon-logo{
+        height:1.8rem;
+        width: 1.8rem;
+        fill: #fff;
+    }
+   
+    &__item{
+        
+        margin-right: .5rem;
+
+        display: flex;
+        align-items: center;
+   
+    }
+}
